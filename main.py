@@ -37,14 +37,14 @@ def run():
     del test['index']
     test = test.reset_index()
 
-    listaPred = list(y_pred_g)
-    listaTrue = list(test["cr"])
-    listaIndex = list(test["index"])
+    lista_pred = list(y_pred_g)
+    lista_true = list(test["cr"])
+    lista_index = list(test["index"])
 
     # Wykresy
     sns.scatterplot(x="index", y="cr", data=test)
-    sns.lineplot(x=listaIndex, y=listaPred, color="red", label='Predicted')
-    sns.lineplot(x=listaIndex, y=listaTrue, color="blue", label="Real")
+    sns.lineplot(x=lista_index, y=lista_pred, color="red", label='Predicted')
+    sns.lineplot(x=lista_index, y=lista_true, color="blue", label="Real")
     plt.show()
 
 

@@ -85,9 +85,9 @@ def get_min_max_of_frame(frame):
 
 
 def get_x_and_y(learn, test, y_type):
-    learnX = learn[["hp", "ac"]].copy()
-    learnY = learn[[y_type]].copy()
-    testX = test[["hp", "ac"]].copy()
-    testY = test[[y_type]].copy()
+    learn_x = learn[["hp", "ac"]].copy()
+    learn_y = learn[[y_type]].copy()
+    test_x = test[["hp", "ac"]].copy()
+    test_y = test[[y_type]].copy()
 
-    return learnX, learnY, testX, testY
+    return learn_x, learn_y, test_x, test_y
