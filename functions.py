@@ -6,8 +6,8 @@ import cr_model
 
 
 def get_parameters(min_cr):
+    parameters = []
     if min_cr >= 1:
-        parameters = []
         for i in range(min_cr, 31):
             parameters.append(i)
     elif 1 > min_cr > 0:
