@@ -39,8 +39,6 @@ def run():
     listaPred = list(y_pred_g)
     listaTrue = list(test["cr"])
     listaIndex = list(test["index"])
-    listaLearn = list(learn["cr"])
-    listaLearnIn = list(learn["index"])
 
     # Wykresy
     sns.scatterplot(x="index", y="cr", data=test)

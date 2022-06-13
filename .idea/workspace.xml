@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9377d0a-c33f-42e1-97c7-f685e0f37140" name="Changes" comment="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,8 @@
       <updated>1655044177505</updated>
       <workItem from="1655044189774" duration="598000" />
       <workItem from="1655077282323" duration="14458000" />
-      <workItem from="1655096684197" duration="2394000" />
+      <workItem from="1655096684197" duration="2490000" />
+      <workItem from="1655105166429" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="git remote add origin https://github.com/MSID-PWr-2022/projekt.git">
       <created>1655097475472</created>
@@ -129,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655097589977</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <created>1655099116674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655099116674</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <created>1655099127807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655099127807</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +165,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="git remote add origin https://github.com/AgataSito/MDiS-projekt.git" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655098529460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655099157321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
