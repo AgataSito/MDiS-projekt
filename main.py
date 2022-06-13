@@ -8,7 +8,7 @@ import cr_model
 
 MINCR = 0
 MINTRAINING = 10
-MINTEST = 6
+MINTEST = 10
 
 
 def run():
@@ -43,9 +43,7 @@ def run():
     listaLearnIn = list(learn["index"])
 
     # Wykresy
-    sns.scatterplot(x="index", y="cr", data=learn)
     sns.scatterplot(x="index", y="cr", data=test)
-    sns.lineplot(x=listaLearnIn, y=listaLearn)
     sns.lineplot(x=listaIndex, y=listaPred, color="red", label='Predicted')
     sns.lineplot(x=listaIndex, y=listaTrue, color="blue", label="Real")
     plt.show()

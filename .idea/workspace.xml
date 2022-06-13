@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9377d0a-c33f-42e1-97c7-f685e0f37140" name="Changes" comment="" />
+    <list default="true" id="b9377d0a-c33f-42e1-97c7-f685e0f37140" name="Changes" comment="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="AgataSito &lt;244992@student.pwr.edu.pl&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -38,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager">
@@ -97,8 +106,30 @@
       <updated>1655044177505</updated>
       <workItem from="1655044189774" duration="598000" />
       <workItem from="1655077282323" duration="14458000" />
-      <workItem from="1655096684197" duration="633000" />
+      <workItem from="1655096684197" duration="2394000" />
     </task>
+    <task id="LOCAL-00001" summary="git remote add origin https://github.com/MSID-PWr-2022/projekt.git">
+      <created>1655097475472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655097475473</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <created>1655097564251</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655097564251</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <created>1655097589977</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655097589977</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +146,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git remote add origin https://github.com/MSID-PWr-2022/projekt.git" />
+    <MESSAGE value="git remote add origin https://github.com/AgataSito/MDiS-projekt.git" />
+    <option name="LAST_COMMIT_MESSAGE" value="git remote add origin https://github.com/AgataSito/MDiS-projekt.git" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655092921669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655098529460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

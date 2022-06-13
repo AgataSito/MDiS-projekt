@@ -66,8 +66,8 @@ def chose_cut_point(data, start_index, end_index):
         )
         model = cr_model.CRModel(params)
         y_pred_g = model.run(t_x_g)
-        blad = round(metrics.mean_absolute_error(t_y_g, y_pred_g))
-        result.append((blad, i))
+        error = round(metrics.mean_absolute_error(t_y_g, y_pred_g))
+        result.append((error, i))
     result.sort(key=lambda tup: tup[0])
     return result[0][1]
 
