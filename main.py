@@ -1,4 +1,3 @@
-import numpy as np
 from matplotlib import pyplot as plt
 from sklearn import metrics
 import seaborn as sns
@@ -6,8 +5,8 @@ from scipy.optimize import curve_fit
 import functions
 import cr_model
 
-MINCR = 0
-MINTRAINING = 10
+MINCR = 0.25
+MINTRAINING = 250
 MINTEST = 10
 
 
@@ -34,8 +33,10 @@ def run():
     print("Avg mistake%:")
     print(round(metrics.mean_absolute_percentage_error(t_y_g, y_pred_g) * 100, 2), "%")
 
-    test["index"] = test.index
-    learn["index"] = learn.index
+    test = test.reset_index()
+    del test['index']
+    test = test.reset_index()
+
     listaPred = list(y_pred_g)
     listaTrue = list(test["cr"])
     listaIndex = list(test["index"])

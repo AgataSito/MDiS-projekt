@@ -50,12 +50,13 @@ def filter_data(data, min_cr):
 def get_data_from_json(min_cr):
     data = pd.read_json('monster_list.json')
     data = filter_data(data, min_cr)
+    data = data.reset_index()
+    del data['index']
     return data
 
 
 def chose_cut_point(data, start_index, end_index):
     result = []
-    data = data
     for i in range(start_index, end_index):
         learn = data[:i]
         test = data[i:]
