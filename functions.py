@@ -38,7 +38,7 @@ def get_data_from_api(min_cr):
             monster_ac.append(monster.json()['armor_class'])
             monster_cr.append(monster.json()['challenge_rating'])
     monsters_dict = {'name': monster_name, 'hp': monster_hp, 'ac': monster_ac, 'cr': monster_cr}
-    data = pd.DataFrame.from_dict(monsters_dict).set_index('name')
+    data = pd.DataFrame.from_dict(monsters_dict)
     return data
 
 
