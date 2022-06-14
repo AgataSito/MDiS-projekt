@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9377d0a-c33f-42e1-97c7-f685e0f37140" name="Changes" comment="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cr_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +46,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Agata\Desktop" />
+      <recent name="C:\" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -111,7 +115,7 @@
       <workItem from="1655105166429" duration="640000" />
       <workItem from="1655126964957" duration="1606000" />
       <workItem from="1655139403536" duration="4294000" />
-      <workItem from="1655147572521" duration="13281000" />
+      <workItem from="1655147572521" duration="17278000" />
     </task>
     <task id="LOCAL-00001" summary="git remote add origin https://github.com/MSID-PWr-2022/projekt.git">
       <created>1655097475472</created>
@@ -183,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655142990482</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="git remote add origin https://github.com/AgataSito/MDiS-projekt.git">
+      <created>1655165434885</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655165434885</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +217,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="git remote add origin https://github.com/AgataSito/MDiS-projekt.git" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655165079322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MDiS_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1655166747944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

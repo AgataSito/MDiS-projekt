@@ -1,3 +1,5 @@
+import numpy as np
+
 import functions
 import seaborn as sns
 import pandas as pd
@@ -17,7 +19,7 @@ def run():
     colormap_bright = plt.cm.RdBu
 
     classifiers = {
-        "Nearest Neighbors": KNeighborsClassifier(3, weights='distance'),
+        "Nearest Neighbors": KNeighborsClassifier(3),
         "Decision Tree": DecisionTreeClassifier(max_depth=5),
         "Random Forest": RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
         "Neural Net": MLPClassifier(alpha=1, max_iter=1000),
@@ -85,11 +87,11 @@ def run():
         axis.set_title(classifier_name)
         results.append({
             "Classifier": classifier_name,
-            "Accuracy": accuracy_score(y_test_inv, y_pred_inv),
-            "Precision": precision_score(y_test_inv, y_pred_inv, average="weighted"),
-            "Recall": recall_score(y_test_inv, y_pred_inv, average="weighted"),
-            "F1": f1_score(y_test_inv, y_pred_inv, average="weighted"),
-            "MCC": matthews_corrcoef(y_test_inv, y_pred_inv),
+            "Accuracy": accuracy_score(y_test_inv * 1000, y_pred_inv * 1000),
+            "Precision": precision_score(y_test_inv * 1000, y_pred_inv * 1000, average="weighted", zero_division=1),
+            "Recall": recall_score(y_test_inv * 1000, y_pred_inv * 1000, average="weighted", zero_division=1),
+            "F1": f1_score(y_test_inv * 1000, y_pred_inv * 1000, average="weighted"),
+            "MCC": matthews_corrcoef(y_test_inv * 1000, y_pred_inv * 1000),
         })
 
     plt.tight_layout()
