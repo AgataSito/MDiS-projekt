@@ -1,8 +1,5 @@
-from sklearn import metrics
 import requests
-from scipy.optimize import curve_fit
 import pandas as pd
-import cr_model
 
 
 def get_parameters(min_cr):
@@ -47,47 +44,20 @@ def filter_data(data, min_cr):
     return data
 
 
+def get_max_and_min(y):
+    helper_min = 30
+    helper_max = 0
+    for each in y:
+        if each > helper_max:
+            helper_max = each
+        if each < helper_min:
+            helper_min = each
+    return helper_max, helper_min
+
+
 def get_data_from_json(min_cr):
     data = pd.read_json('monster_list.json')
     data = filter_data(data, min_cr)
     data = data.reset_index()
     del data['index']
     return data
-
-
-def chose_cut_point(data, start_index, end_index):
-    result = []
-    for i in range(start_index, end_index):
-        learn = data[:i]
-        test = data[i:]
-        l_x_g, l_y_g, t_x_g, t_y_g = get_x_and_y(learn, test, "cr")
-
-        params, _ = curve_fit(
-            cr_model.model_fun, xdata=l_x_g, ydata=l_y_g.values.ravel()
-        )
-        model = cr_model.CRModel(params)
-        y_pred_g = model.run(t_x_g)
-        error = round(metrics.mean_absolute_error(t_y_g, y_pred_g))
-        result.append((error, i))
-    result.sort(key=lambda tup: tup[0])
-    return result[0][1]
-
-
-def get_min_max_of_frame(frame):
-    min_col = {}
-    max_col = {}
-    for col in frame:
-        max_col[col] = frame[col].max()
-        min_col[col] = frame[col].min()
-
-    result = pd.DataFrame([min_col, max_col], index=['min', 'max'])
-    return result
-
-
-def get_x_and_y(learn, test, y_type):
-    learn_x = learn[["hp", "ac"]].copy()
-    learn_y = learn[[y_type]].copy()
-    test_x = test[["hp", "ac"]].copy()
-    test_y = test[[y_type]].copy()
-
-    return learn_x, learn_y, test_x, test_y
